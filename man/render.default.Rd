@@ -13,6 +13,7 @@ render.default(
   render.continuous = render.continuous.default,
   render.categorical = render.categorical.default,
   render.missing = render.missing.default,
+  NA.label = "Missing",
   ...
 )
 }
@@ -40,6 +41,8 @@ it is passed to \code{\link{parse.abbrev.render.code}}.}
 Can also be a \code{character} string, in which case it is passed to
 \code{\link{parse.abbrev.render.code}}. Set to \code{NULL} to ignore missing
 values.}
+
+\item{NA.label}{label for NA counts in table}
 
 \item{...}{Further arguments, passed to \code{\link{stats.apply.rounding}}.}
 }

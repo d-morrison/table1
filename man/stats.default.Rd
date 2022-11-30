@@ -4,13 +4,15 @@
 \alias{stats.default}
 \title{Compute some basic descriptive statistics.}
 \usage{
-stats.default(x, quantile.type = 7, ...)
+stats.default(x, quantile.type = 7, NA.label = "Missing", ...)
 }
 \arguments{
 \item{x}{A vector or numeric, factor, character or logical values.}
 
 \item{quantile.type}{An integer from 1 to 9, passed as the \code{type}
 argument to function \code{\link[stats]{quantile}}.}
+
+\item{NA.label}{label for NAs}
 
 \item{...}{Further arguments (ignored).}
 }
